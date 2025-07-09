@@ -1,0 +1,89 @@
+
+.waz-chat-icons-box{
+  display:none;
+  position:fixed;
+  right:20px;
+  bottom:100px;
+  width:200px;
+  background-color:#FFF;
+  border:2px solid #F55;
+  border-radius:4px;
+  z-index:9990;
+}
+
+.waz-chat-icons-box:after {
+  content: " ";
+  position: absolute;
+  right: 20px;
+  bottom: -15px;
+  border-top: 15px solid #F55;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-bottom: none;
+}
+
+.waz-chat-icons-box ul{
+  list-style: none;
+  padding:10px;
+}
+
+.waz-chat-icons-box ul li{
+  position:relative;
+  padding-left:58px;
+  font-size:1.2rem;
+  line-height:40px;
+  color:#555;
+  border-bottom:1px solid #FFF;
+  transition:all 0.3s ease-in-out;
+}
+
+.waz-chat-icons-box ul li:hover{
+  border-bottom:1px solid #F55;
+  background-color:#faa;
+}
+
+.waz-chat-icons-box ul li a{
+  display:block;
+  padding:8px;
+  text-decoration:none;
+  color:#555;
+}
+
+.waz-chat-icons-box ul li img{
+  display:block;
+  position:absolute;
+  top:8px;
+  left:8px;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+}
+
+.waz-chat-icons-box ul li span{
+  display:inline-block;
+  height:40px;
+vertical-align:top;
+  border:1px solid #f00;
+}
+
+.waz-chat-icon{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:60px;
+  height:60px;
+  background-color:#FFF;
+  background-image:url('../images/chat-icons/chat-icon.png');
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  border-radius:50%;
+  cursor:pointer;
+  overflow:hidden;
+  transition: all .3s;
+  z-index:9990;
+}
+
+.waz-chat-icon.waz-chat-icon-active{
+  background-image:url('../images/chat-icons/chat-icon-close.png');
+}
